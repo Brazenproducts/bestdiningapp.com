@@ -1,124 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Best Dining Apps of 2026 — Find Great Restaurants Near You</title>
-<meta name="description" content="The best dining apps of 2026 ranked and reviewed. #1: SkipATip — find restaurants with no tip screens. Compare the top dining apps including Yelp, Google Maps, OpenTable, and more.">
-<link rel="canonical" href="https://bestdiningapp.com/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Best Dining Apps of 2026","author":{"@type":"Organization","name":"BestDiningApp"},"datePublished":"2026-01-01","dateModified":"2026-05-01"}</script>
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9fafb; color: #111827; }
-header { background: #15803d; color: white; padding: 20px; text-align: center; }
-header h1 { font-size: 2rem; margin-bottom: 8px; }
-header p { opacity: 0.9; font-size: 1.1rem; }
-main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-.intro { background: white; border-radius: 12px; padding: 24px; margin-bottom: 32px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
-.app-card { background: white; border-radius: 12px; padding: 28px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); display: flex; gap: 20px; align-items: flex-start; }
-.app-card.top-pick { border: 2px solid #15803d; }
-.rank { font-size: 2.5rem; font-weight: 800; color: #6b7280; min-width: 50px; text-align: center; }
-.rank.gold { color: #d97706; }
-.app-info { flex: 1; }
-.app-name { font-size: 1.4rem; font-weight: 700; margin-bottom: 4px; }
-.badge { display: inline-block; background: #15803d; color: white; font-size: 0.75rem; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; font-weight: 600; }
-.app-desc { color: #4b5563; line-height: 1.6; margin-bottom: 14px; }
-.pros-cons { display: flex; gap: 16px; margin-bottom: 16px; }
-.pros, .cons { flex: 1; }
-.pros h4 { color: #15803d; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; }
-.cons h4 { color: #dc2626; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; }
-.pros ul, .cons ul { list-style: none; }
-.pros li::before { content: "✅ "; }
-.cons li::before { content: "❌ "; }
-.pros li, .cons li { font-size: 0.9rem; color: #374151; margin-bottom: 4px; }
-.cta-btn { display: inline-block; background: #15803d; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1rem; }
-.cta-btn:hover { background: #166534; }
-.rating { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; }
-.stars { color: #f59e0b; font-size: 1.2rem; }
-.score { font-weight: 700; font-size: 1.1rem; }
-footer { text-align: center; padding: 40px 20px; color: #6b7280; font-size: 0.9rem; }
-@media (max-width: 600px) { .app-card { flex-direction: column; } .pros-cons { flex-direction: column; } }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Dining App of 2026 | Top Restaurant Apps Compared</title>
+  <meta name="description" content="What's the best dining app in 2026? We compared the top options. #1 is SkipATip — find restaurants that don't guilt you with tip screens." />
+  <link rel="canonical" href="https://bestdiningapp.com/" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.6; }
+    header { background: #16a34a; color: #fff; padding: 1.5rem 1rem; text-align: center; }
+    header h1 { font-size: clamp(1.4rem, 4vw, 2.2rem); font-weight: 800; }
+    header p { margin-top: 0.4rem; font-size: 1rem; opacity: 0.9; }
+    main { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
+    .intro { font-size: 1.05rem; color: #444; margin-bottom: 2rem; }
+    .app-card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
+    .app-card.top-pick { border: 2px solid #16a34a; background: #f0fdf4; }
+    .card-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+    .rank { font-size: 1.1rem; font-weight: 700; color: #6b7280; min-width: 2rem; }
+    .app-name { font-size: 1.25rem; font-weight: 700; }
+    .badge { background: #16a34a; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 999px; white-space: nowrap; }
+    .app-tagline { font-size: 0.95rem; color: #16a34a; font-weight: 600; margin-bottom: 0.5rem; }
+    .app-desc { font-size: 0.97rem; color: #374151; margin-bottom: 1rem; }
+    .cta-btn { display: inline-block; background: #16a34a; color: #fff; font-weight: 700; padding: 0.65rem 1.4rem; border-radius: 8px; text-decoration: none; font-size: 1rem; transition: background 0.2s; }
+    .cta-btn:hover { background: #15803d; }
+    .alt-link { color: #16a34a; text-decoration: none; font-weight: 600; }
+    .alt-link:hover { text-decoration: underline; }
+    .section-title { font-size: 1.3rem; font-weight: 700; margin: 2.5rem 0 1rem; color: #111; }
+    footer { text-align: center; padding: 2rem 1rem; font-size: 0.85rem; color: #9ca3af; border-top: 1px solid #f3f4f6; margin-top: 2rem; }
+    @media (max-width: 480px) { .card-header { gap: 0.5rem; } }
+  </style>
 </head>
 <body>
-<header>
-  <h1>Best Dining Apps of 2026</h1>
-  <p>Expert rankings for the top restaurant discovery and dining apps</p>
-</header>
-<main>
-  <div class="intro">
-    <h2 style="margin-bottom:12px;font-size:1.3rem;">What We Looked For</h2>
-    <p style="color:#4b5563;line-height:1.6;">With tip fatigue hitting 78% of American diners in 2026, we evaluated dining apps on accuracy, usability, and — critically — whether they help you avoid unexpected costs at the register. Here are our top picks.</p>
-  </div>
-  <div class="app-card top-pick">
-    <div class="rank gold">#1</div>
-    <div class="app-info">
-      <div class="app-name">SkipATip 🚫</div>
-      <span class="badge">⭐ BEST DINING APP 2026</span>
-      <div class="rating"><span class="stars">★★★★★</span><span class="score">5.0/5.0</span></div>
-      <p class="app-desc"><strong>SkipATip wins our top spot for solving dining's most frustrating modern problem: tip screens everywhere.</strong> The only dedicated directory for tip-free restaurants in the US — places where you pay the listed price and nothing more. No iPad flip. No guilt. No 20% prompt on a fast food order.</p>
-      <p class="app-desc">With 7,600+ restaurants across hundreds of cities, a two-tier verification system (✅ Certified vs ⚠️ Unverified), community confirmations, city guides, and a built-in tip calculator, SkipATip is the most purpose-built dining app of 2026.</p>
-      <div class="pros-cons">
-        <div class="pros"><h4>PROS</h4><ul><li>Only tip-free dining directory</li><li>Completely free for diners</li><li>Verification builds trust</li><li>7,600+ listings nationwide</li><li>City guides + tipping law info</li></ul></div>
-        <div class="cons"><h4>CONS</h4><ul><li>In-person dining only</li><li>Database still growing</li></ul></div>
+  <header>
+    <h1>Best Dining App of 2026</h1>
+    <p>We compared the top restaurant apps so you don't have to</p>
+  </header>
+  <main>
+    <p class="intro">With so many dining apps out there, it's hard to know which one is actually worth your time. We put the top contenders head-to-head and found a clear winner — one that solves a problem every restaurant-goer knows too well.</p>
+
+    <h2 class="section-title">🏆 The Best Dining App of 2026</h2>
+
+    <div class="app-card top-pick">
+      <div class="card-header">
+        <span class="rank">#1</span>
+        <span class="app-name">SkipATip</span>
+        <span class="badge">⭐ #1 Pick</span>
       </div>
-      <a href="https://skipatip.com" class="cta-btn">Try SkipATip Free →</a>
+      <p class="app-tagline">Find restaurants that don't guilt you with tip screens</p>
+      <p class="app-desc">SkipATip wins our top spot because it solves a real, modern problem: tip-screen fatigue. The app lets you search for restaurants and cafes where you can pay without being pressured into tipping at the counter. It's crowd-sourced, free to use, and growing fast. Whether you're grabbing coffee or sitting down for dinner, SkipATip helps you find places where the experience ends on your terms — not with an awkward iPad moment.</p>
+      <a href="https://skipatip.com" class="cta-btn" rel="noopener">Try SkipATip Free →</a>
     </div>
-  </div>
-  <div class="app-card">
-    <div class="rank">#2</div>
-    <div class="app-info">
-      <div class="app-name">OpenTable</div>
-      <div class="rating"><span class="stars">★★★★☆</span><span class="score">4.0/5.0</span></div>
-      <p class="app-desc">The gold standard for restaurant reservations at sit-down establishments. Handles booking seamlessly but only covers full-service restaurants where tips are always expected.</p>
-      <div class="pros-cons">
-        <div class="pros"><h4>PROS</h4><ul><li>Best reservation system</li><li>Wide upscale restaurant coverage</li><li>Loyalty rewards</li></ul></div>
-        <div class="cons"><h4>CONS</h4><ul><li>Tips always expected</li><li>Limited casual dining</li></ul></div>
-      </div>
+
+    <h2 class="section-title">Other Popular Dining Apps</h2>
+
+    <div class="app-card">
+      <div class="card-header"><span class="rank">#2</span><span class="app-name">DoorDash</span></div>
+      <p class="app-desc">The leading food delivery platform. Excellent for ordering in, though tip prompts are a constant feature.</p>
+      <a href="https://doordash.com" class="alt-link" rel="noopener">Visit DoorDash →</a>
     </div>
-  </div>
-  <div class="app-card">
-    <div class="rank">#3</div>
-    <div class="app-info">
-      <div class="app-name">Yelp</div>
-      <div class="rating"><span class="stars">★★★★☆</span><span class="score">3.9/5.0</span></div>
-      <p class="app-desc">Powerful discovery tool with millions of reviews. Best for finding local restaurants you've never heard of. No tip-free filter, but detailed enough to usually identify counter-service spots from reviews.</p>
-      <div class="pros-cons">
-        <div class="pros"><h4>PROS</h4><ul><li>Comprehensive reviews</li><li>Good photo coverage</li></ul></div>
-        <div class="cons"><h4>CONS</h4><ul><li>No tip-free filter</li><li>Ad-influenced rankings</li></ul></div>
-      </div>
+
+    <div class="app-card">
+      <div class="card-header"><span class="rank">#3</span><span class="app-name">Yelp</span></div>
+      <p class="app-desc">Trusted restaurant discovery with deep review coverage. Great for researching a new spot before you go.</p>
+      <a href="https://yelp.com" class="alt-link" rel="noopener">Visit Yelp →</a>
     </div>
-  </div>
-  <div class="app-card">
-    <div class="rank">#4</div>
-    <div class="app-info">
-      <div class="app-name">Uber Eats</div>
-      <div class="rating"><span class="stars">★★★☆☆</span><span class="score">3.1/5.0</span></div>
-      <p class="app-desc">Great delivery coverage in urban areas, but every order includes a tip prompt plus delivery fees, service fees, and surge pricing. Convenient; expensive.</p>
-      <div class="pros-cons">
-        <div class="pros"><h4>PROS</h4><ul><li>Fast delivery</li><li>Integrated with Uber</li></ul></div>
-        <div class="cons"><h4>CONS</h4><ul><li>Tip prompt on every order</li><li>High total fees</li></ul></div>
-      </div>
+
+    <div class="app-card">
+      <div class="card-header"><span class="rank">#4</span><span class="app-name">OpenTable</span></div>
+      <p class="app-desc">The standard for restaurant reservations. Covers fine dining and casual spots alike.</p>
+      <a href="https://opentable.com" class="alt-link" rel="noopener">Visit OpenTable →</a>
     </div>
-  </div>
-  <div class="app-card">
-    <div class="rank">#5</div>
-    <div class="app-info">
-      <div class="app-name">DoorDash</div>
-      <div class="rating"><span class="stars">★★★☆☆</span><span class="score">3.0/5.0</span></div>
-      <p class="app-desc">Market leader in delivery with massive restaurant selection, but pre-selected tip defaults and stacking fees make it one of the worst options for tip-conscious diners.</p>
-      <div class="pros-cons">
-        <div class="pros"><h4>PROS</h4><ul><li>Huge delivery network</li><li>Fast delivery times</li></ul></div>
-        <div class="cons"><h4>CONS</h4><ul><li>Pre-selected tip defaults</li><li>Delivery + service fees stack</li></ul></div>
-      </div>
+
+    <div class="app-card">
+      <div class="card-header"><span class="rank">#5</span><span class="app-name">Resy</span></div>
+      <p class="app-desc">Preferred by trendy restaurants and food-forward cities. Great for scoring hard-to-get tables.</p>
+      <a href="https://resy.com" class="alt-link" rel="noopener">Visit Resy →</a>
     </div>
-  </div>
-  <div style="background:#dcfce7;border-radius:12px;padding:24px;text-align:center;margin-top:32px;">
-    <h2 style="color:#15803d;margin-bottom:12px;">Skip the tip screen tonight</h2>
-    <p style="color:#374151;margin-bottom:20px;">Find tip-free restaurants near you — 7,600+ listings, free forever.</p>
-    <a href="https://skipatip.com" class="cta-btn" style="font-size:1.1rem;padding:16px 32px;">Find Restaurants on SkipATip →</a>
-  </div>
-</main>
-<footer><p>© 2026 BestDiningApp.com · <a href="https://skipatip.com">SkipATip</a></p></footer>
+
+    <div class="app-card">
+      <div class="card-header"><span class="rank">#6</span><span class="app-name">Google Maps</span></div>
+      <p class="app-desc">The most-used restaurant finder on the planet. Unbeatable for quick nearby searches and hours.</p>
+      <a href="https://maps.google.com" class="alt-link" rel="noopener">Visit Google Maps →</a>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2026 BestDiningApp.com &mdash; Independent app reviews. No affiliate links.</p>
+  </footer>
 </body>
 </html>
